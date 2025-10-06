@@ -4,7 +4,7 @@ const get_image = require("./all_function/getImage")
 const deleteImage = require("./all_function/deleteImage")
 const express = require("express")
 const app = express()
-const port = 8080
+const port = 8080 | process.env.PORT
 app.use(fileUpload())
 app.use(express.json())
 
